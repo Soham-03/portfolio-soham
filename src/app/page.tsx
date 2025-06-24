@@ -195,25 +195,25 @@ export default function Portfolio() {
   ];
 
   const freelanceProjects = [
-  {
-    title: "A. S. Engineering Works Website",
-    client: "A. S. Engineering Works",
-    description: "Crafted a responsive website showcasing industrial food-processing machines, product catalog, and contact info — helping them reach customers online.",
-    tech: ["Next.js", "React", "CSS", "Firebase"],
-    timeline: "About 1 month",
-    image: "/as.png",
-    link: "https://asengineeringworks.in/"
-  },
-  {
-    title: "Prabhat Steel Website",
-    client: "Prabhat Steel",
-    description: "Built a clean, modern homepage for a steel business, highlighting services, gallery, and contact — deployed to Vercel for quick live updates.",
-    tech: ["Next.js", "React", "Vercel", "Supabase"],
-    timeline: "Couple weeks",
-    image: "/prabhat.png",
-    link: "https://prabhat-steel.vercel.app/"
-  }
-];
+    {
+      title: "A. S. Engineering Works Website",
+      client: "A. S. Engineering Works",
+      description: "Crafted a responsive website showcasing industrial food-processing machines, product catalog, and contact info — helping them reach customers online.",
+      tech: ["Next.js", "React", "CSS", "Firebase"],
+      timeline: "About 1 month",
+      image: "/as.png",
+      link: "https://asengineeringworks.in/"
+    },
+    {
+      title: "Prabhat Steel Website",
+      client: "Prabhat Steel",
+      description: "Built a clean, modern homepage for a steel business, highlighting services, gallery, and contact — deployed to Vercel for quick live updates.",
+      tech: ["Next.js", "React", "Vercel", "Supabase"],
+      timeline: "Couple weeks",
+      image: "/prabhat.png",
+      link: "https://prabhat-steel.vercel.app/"
+    }
+  ];
 
 
   // Custom cursor tracking
@@ -402,7 +402,7 @@ export default function Portfolio() {
       </div>
 
       {/* Main Content */}
-      <div className="ml-64 mr-80 h-screen overflow-y-hidden relative">
+      <div className="ml-64 mr-80 h-screen overflow-y-hidden relative main-content-font">
         {/* Subtle Notebook Lines Background */}
         <div className="absolute inset-0 pointer-events-none z-0">
           <div className="w-full h-full" style={{
@@ -421,7 +421,7 @@ export default function Portfolio() {
             <div className="max-w-6xl w-full mx-auto">
               {/* Personal Note */}
               <div className="mb-12 p-6 bg-gray-800/30 border-l-4 border-blue-400 rounded-r-lg backdrop-blur-sm">
-                <p className="text-gray-300 italic font-light leading-relaxed">
+                <p className="text-gray-300 italic font-light leading-relaxed text-xl">
                   📝 <strong className="text-blue-400">Hey there!</strong> This isn’t just a portfolio, it’s my space. A mix of everything I’ve built, learned, messed up, and figured out along the way. It’s as much about who I am as what I’ve done.
                 </p>
               </div>
@@ -449,8 +449,8 @@ export default function Portfolio() {
                   </p>
                   <div className="grid grid-cols-3 gap-6 pt-2 animate-fade-in-up" style={{ animationDelay: '800ms' }}>
                     <div className="text-center">
-                      <div className="text-3xl font-light text-blue-400 mb-1">2+</div>
-                      <div className="text-sm text-gray-400 font-light">Startup Projects</div>
+                      <div className="text-3xl font-light text-blue-400 mb-1">4+</div>
+                      <div className="text-sm text-gray-400 font-light">Years of Experience</div>
                     </div>
                     <div className="text-center">
                       <div className="text-3xl font-light text-green-400 mb-1">9+</div>
@@ -472,7 +472,7 @@ export default function Portfolio() {
             <div className="max-w-6xl mx-auto">
               {/* Personal Note */}
               <div className="mb-12 p-6 bg-gray-800/30 border-l-4 border-green-400 rounded-r-lg backdrop-blur-sm">
-                <p className="text-gray-300 italic font-light leading-relaxed">
+                <p className="text-gray-300 italic font-light leading-relaxed text-xl">
                   🚀 <strong className="text-green-400">The Real World Journey!</strong> Somehow got thrown into the corporate world, ended up building stuff people actually use. M-Indicator, Mumbai University... wild ride tbh. Realized making things that make a difference? Yeah, that’s my thing.
                 </p>
               </div>
@@ -500,7 +500,7 @@ export default function Portfolio() {
                       <div className={`space-y-6 ${index % 2 === 1 ? 'lg:order-1' : ''} animate-fade-in-left`} style={{ animationDelay: `${index * 300 + 200}ms` }}>
                         <div>
                           <h3 className="text-2xl font-light text-white mb-2 transform transition-all duration-500 hover:translate-x-2">{internship.role}</h3>
-                          <p className="text-gray-400 font-light leading-relaxed">{internship.description}</p>
+                          <p className="text-gray-400 font-light leading-relaxed text-lg">{internship.description}</p>
                         </div>
 
                         <div>
@@ -539,7 +539,7 @@ export default function Portfolio() {
             <div className="max-w-6xl mx-auto">
               {/* Personal Note */}
               <div className="mb-12 p-6 bg-gray-800/30 border-l-4 border-purple-400 rounded-r-lg backdrop-blur-sm">
-                <p className="text-gray-300 italic font-light leading-relaxed">
+                <p className="text-gray-300 italic font-light leading-relaxed  text-xl">
                   🛠️ <strong className="text-purple-400">Skills and Projects</strong> Everything I’ve poked, prodded, broken, and finally figured out (after sleepless nights). Code I wrote when I was just vibing, some of it won hackathons, some of it just made life easier. All of it? 100% me.
                 </p>
               </div>
@@ -639,7 +639,7 @@ export default function Portfolio() {
             <div className="max-w-6xl mx-auto">
               {/* Personal Note */}
               <div className="mb-12 p-6 bg-gray-800/30 border-l-4 border-yellow-400 rounded-r-lg backdrop-blur-sm">
-                <p className="text-gray-300 italic font-light leading-relaxed">
+                <p className="text-gray-300 italic font-light leading-relaxed text-xl">
                   🏆 <strong className="text-yellow-400">Hackathons</strong> Started off for the free food and 24 hours of chaos, now it's my weekend staycation. Won 9 (and counting), but honestly? It's just my happy place to build, break, vibe, and win a little.
                 </p>
               </div>
@@ -674,7 +674,7 @@ export default function Portfolio() {
             <div className="max-w-6xl mx-auto">
               {/* Personal Note */}
               <div className="mb-12 p-6 bg-gray-800/30 border-l-4 border-cyan-400 rounded-r-lg backdrop-blur-sm">
-                <p className="text-gray-300 italic font-light leading-relaxed">
+                <p className="text-gray-300 italic font-light leading-relaxed text-xl">
                   💼 <strong className="text-cyan-400">Freelance Projects</strong> Took a few side quests, helped brands get their tech game on. Kinda wild seeing something you made actually work in the wild. Real impact, real fun.
                 </p>
               </div>
@@ -707,7 +707,7 @@ export default function Portfolio() {
                         <div>
                           <h3 className="text-2xl font-light text-white mb-2 transform transition-all duration-500 hover:translate-x-2">{project.title}</h3>
                           <p className="text-sm text-gray-400 mb-4 font-light">Client: {project.client}</p>
-                          <p className="text-gray-300 font-light leading-relaxed">{project.description}</p>
+                          <p className="text-gray-300 font-light leading-relaxed text-lg">{project.description}</p>
                         </div>
 
                         <div className="flex flex-wrap gap-2">
@@ -746,13 +746,6 @@ export default function Portfolio() {
               <span className="uppercase tracking-wide">sohamparab1003@gmail.com</span>
             </a>
             <a
-              href="#"
-              className="interactive flex items-center space-x-2 transform transition-all duration-300 hover:translate-y-[-2px] hover:text-gray-300"
-            >
-              <Facebook size={12} />
-              <span className="uppercase tracking-wide">facebook</span>
-            </a>
-            <a
               href="https://github.com/Soham-03"
               className="interactive flex items-center space-x-2 transform transition-all duration-300 hover:translate-y-[-2px] hover:text-gray-300"
             >
@@ -760,7 +753,7 @@ export default function Portfolio() {
               <span className="uppercase tracking-wide">github</span>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/sohamm-parab/"
               className="interactive flex items-center space-x-2 transform transition-all duration-300 hover:translate-y-[-2px] hover:text-gray-300"
             >
               <Linkedin size={12} />
@@ -828,6 +821,22 @@ export default function Portfolio() {
             opacity: 1;
             transform: translateX(0);
           }
+        }
+
+        @font-face {
+          font-family: 'YourFontName';
+          src: url('/ff.ttf') format('opentype');
+          font-weight: normal;
+          font-style: normal;
+        }
+
+        /* Apply to main content */
+        .main-content-font {
+          font-family: 'YourFontName', sans-serif;
+        }
+
+        .main-content-font * {
+          font-family: 'YourFontName', sans-serif;
         }
 
         @keyframes fadeInRight {
