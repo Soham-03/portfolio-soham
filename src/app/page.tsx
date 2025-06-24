@@ -617,7 +617,7 @@ export default function Portfolio() {
               </div>
 
               <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: '600ms' }}>
-                <p className="text-gray-300 font-light">
+                <p className="text-gray-300 font-light text-2xl">
                   I've built more projects view them on{' '}
                   <a
                     href="https://github.com/Soham-03"
@@ -640,7 +640,7 @@ export default function Portfolio() {
               {/* Personal Note */}
               <div className="mb-12 p-6 bg-gray-800/30 border-l-4 border-yellow-400 rounded-r-lg backdrop-blur-sm">
                 <p className="text-gray-300 italic font-light leading-relaxed text-xl">
-                  🏆 <strong className="text-yellow-400">Hackathons</strong> Started off for the free food and 24 hours of chaos, now it's my weekend staycation. Won 9 (and counting), but honestly? It's just my happy place to build, break, vibe, and win a little.
+                  🏆 <strong className="text-yellow-400">Hackathons</strong> Started off for the free food and 24 hours of chaos, now it's my weekend staycation. <strong className="text-yellow-400">Won 9 (and counting)</strong>, but honestly? It's just my happy place to build, break, vibe, and win a little.
                 </p>
               </div>
               <div className="grid lg:grid-cols-2 gap-8">
